@@ -46,11 +46,23 @@ public class Main {
             System.out.println (second + " is longer");
         }
 
+
        if (first.compareTo (second) == 0) {
-           System.out.println ("Both strings have the same length");
+           System.out.println ("Both strings have the exact same characters");
        }
         else if (first.compareTo (second) > 0) {
-            System.out.println ("")
+            System.out.println (second + " is first alphabetically");
+        }
+        else {
+            System.out.println (first + " is first alphabetically");
+        }
+
+
+        if (first.indexOf (second) != -1) {
+            System.out.println (second + "is found in " + first + " at index " + first.indexOf (second));
+        }
+        else {
+            System.out.println (second + " is NOT found in " + first);
         }
     }
 }
